@@ -25,12 +25,14 @@
 
     <script>
         window.onload = function(){
-            const loader = document.querySelector(".loader");
-            loader.classList.add("loaded");
-            const content = document.querySelector(".content");
-            content.style.visibility = "visible";
-            const circle2 = document.querySelector(".circle2");
-            circle2.classList.add('active');
+            setTimeout(() => {
+                const loader = document.querySelector(".loader");
+                loader.classList.add("loaded");
+                const content = document.querySelector(".content");
+                content.style.visibility = "visible";
+                const circle2 = document.querySelector(".circle2");
+                circle2.classList.add('active');
+            }, 1000);
         }
     </script>
 </body>
