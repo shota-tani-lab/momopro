@@ -171,3 +171,35 @@ body{
     text-decoration: none;
     color: #fff;
 }
+
+.img{
+    height: 20vh;
+    width: auto;
+    display: flex;
+    padding-bottom: 5%;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.padding1{
+    padding-bottom: 5%;
+}
+
+.paddingdiv{
+    padding: 5%;
+}
+
+.white{
+    color: #fff;
+}
+
+.twitter{
+    padding: 5%;
+}
+
+.insta{
+    padding: 5%;
+}
