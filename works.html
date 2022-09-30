@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>info-桃山学院大学プログラミング研究会</title>
+    <link rel="stylesheet" href="info.css">
+
+</head>
+<body>
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <h2>Now Loading...</h2>
+    </div>
+
+    <div class="content">
+        <h2>Works</h2>
+        <p><a href="https://www.nenpass.com">・年パスドットコム</a><br>(サーバーが落ちている可能性あり)</p>
+        <a href="https://www.nenpass.com"><img src="img/nenlogo.png" alt="" class="img"></a>
+        <a class="link-hover" href="index.html"><div class="circle2"><p class="circle-inner">戻る</p></div></a>
+    </div>
+
+    <script>
+        window.onload = function(){
+            setTimeout(() => {
+                const loader = document.querySelector(".loader");
+                loader.classList.add("loaded");
+                const content = document.querySelector(".content");
+                content.style.visibility = "visible";
+                const circle2 = document.querySelector(".circle2");
+                circle2.classList.add('active');
+            }, 200);
+        }
+    </script>
+</body>
+</html>

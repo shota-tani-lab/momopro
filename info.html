@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>info-桃山学院大学プログラミング研究会</title>
+    <link rel="stylesheet" href="info.css">
+</head>
+<body>
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <h2>Now Loading...</h2>
+    </div>
+
+    <div class="content">
+        <div class="paddingdiv">
+            <h2 class="padding1">info</h2>
+            <p>「プログラミングを学ぶ、<br>実践する」</p>
+            <p>桃山学院大学のプログラミング研究会です。</p>
+            <p>年中募集中！</p>
+            <p>お問合せはSNSでお願いします。</p>
+            <div class="twitter">
+                <a href="https://twitter.com/MomogakuPro/"><i class="fa-brands fa-twitter white"></i>@MomogakuPro</a>
+            </div>
+            <div class="insta">
+                <a href="https://instagram.com/momogakupro?r=nametag"><i class="fa-brands fa-instagram white"></i>@momogakupro</a>
+            </div>
+        </div>
+        <a class="link-hover" href="index.html"><div class="circle2"><p class="circle-inner">戻る</p></div></a>
+    </div>
+
+    <div class="footer">
+        <footer><p>© 2022 MomogakuPro</p></footer>
+    </div>
+    <script>
+        window.onload = function(){
+            setTimeout(() => {
+                const loader = document.querySelector(".loader");
+                loader.classList.add("loaded");
+                const content = document.querySelector(".content");
+                content.style.visibility = "visible";
+                const circle2 = document.querySelector(".circle2");
+                circle2.classList.add('active');
+            }, 200);
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/236688c304.js" crossorigin="anonymous"></script>
+</body>
+</html>

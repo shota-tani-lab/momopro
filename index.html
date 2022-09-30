@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>桃山学院大学プログラミング研究会</title>
+    <link rel="stylesheet" href="index.css">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYTSL8CH0B"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-ZYTSL8CH0B');
+        </script>
+</head>
+<body>
+
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <h2>Now Loading...</h2>
+    </div>
+
+    <div class="content">
+        <h1 class="box">桃山学院大学<br>プログラミング<br>研究会</h1>
+        <img class="blacklogo" src="img/blacklogo.png" alt="">
+        <div class="leftfloat"></div>
+        <div class="maru2">
+            <a class="link-hover" href="info.html"><div class="circle"><p class="circle-inner">サークル情報</p></div></a>
+            <a class="link-hover" href="works.html"><div class="circle2"><p class="circle-inner">作品群</p></div></a>
+        </div>
+    </div>
+    <script>
+        window.onload = function(){
+            setTimeout(()=>{
+                const loader = document.querySelector(".loader");
+                loader.classList.add("loaded");
+                const content = document.querySelector(".content");
+                content.style.visibility = "visible";
+                const logo1 = document.querySelector(".box");
+                logo1.classList.add('fadeUp');
+                const blacklogo = document.querySelector(".blacklogo");
+                logo1.addEventListener('animationend', ()=>{
+                    blacklogo.classList.add("active");
+                });
+                const circle = document.querySelector(".circle");
+                const circle2 = document.querySelector(".circle2");
+                blacklogo.addEventListener('animationend', ()=> {
+                    circle.classList.add('active');
+                    circle2.classList.add('active');
+                });
+            },500);
+        }
+    </script>
+
+</body>
+</html>
